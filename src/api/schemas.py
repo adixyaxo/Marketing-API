@@ -1,16 +1,8 @@
 
-from pydantic import BaseModel, ConfigDict # BaseModel is a class which is inherited into the class you want to apply types to
+from pydantic import BaseModel ,ConfigDict ,Field ,field_validator ,model_validator ,computed_field
+from  typing import Optional, Literal, List
 
-
-from pydantic import Field # Field kisi bhi field ko optional ya required banane ke liye use hota hai
-
-from pydantic import field_validator, model_validator, computed_field
-
-from  typing import Optional, Literal
-
-from typing import List
-
-class Marketing(BaseModel):
+class Marketing_Campaign(BaseModel):
   Campaign_ID:int = Field(...,ge=0, description="Unique identifier for the marketing campaign")
   Company:str = Field(..., description="Name of the company")
   Campaign_Type:str = Field(..., description="Type of the marketing campaign")
