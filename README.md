@@ -77,7 +77,7 @@ marketing-campaign-analysis-api/
 │
 ├── app/
 │   │
-│   ├── main.py                 # FastAPI application
+│   |
 │   │
 │   ├── api/
 │   │   ├── upload.py
@@ -109,8 +109,10 @@ marketing-campaign-analysis-api/
 ├── tests/
 │
 ├── requirements.txt
+├── .gitignore
 ├── README.md
-└── .gitignore
+└── main.py
+
 ```
 
 ---
